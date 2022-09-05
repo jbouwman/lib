@@ -1,0 +1,16 @@
+#!/usr/bin/env bb
+
+(require '[clojure.string :as str])
+(require '[babashka.process :refer [process check sh pipeline pb]])
+
+(def cover
+  ["clojure" "-Mkaocha" "-m" "kaocha.runner" "--plugin" "cloverage"])
+
+(defn run [c]
+  (do @(process c {:out :inherit}) nil))
+
+(let [[op & rest] *command-line-args*]
+  (case op
+    "ns" (run (concat cover ["--cov-ns-regex" (first rest) "--focus"
+                             (format "%s-test" (first rest))]))
+    (run cover)))
