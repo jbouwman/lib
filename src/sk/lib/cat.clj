@@ -1,4 +1,5 @@
-(ns sk.lib.cat)
+(ns sk.lib.cat
+  (:refer-clojure :exclude [isa?]))
 
 ;;
 ;; Categories describe what can be said of classes.
