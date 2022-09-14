@@ -7,7 +7,7 @@
   <version>LATEST</version>
   <name>lib</name>
   <description>A Clojure utility library</description>
-  <url>https://github.com/$USER/$PROJECT</url>
+  <url>https://github.com/jbouwman/lib</url>
   
   <licenses>
     <license>
@@ -23,9 +23,9 @@
   </developers>
 
   <scm>
-    <url>https://github.com/$USER/$PROJECT</url>
-    <connection>scm:git:git://github.com/$USER/$PROJECT.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/$USER/$PROJECT.git</developerConnection>
+    <url>https://github.com/jbouwman/lib</url>
+    <connection>scm:git:git://github.com/jbouwman/lib.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jbouwman/lib.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 </project>
